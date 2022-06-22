@@ -1,5 +1,5 @@
 // array of background src
-const backgrounds = ["1.jpg", "2.jpg", "3.jpg", "4.jpg"]
+const backgrounds = ["1.jpg", "2.jpg", "3.jpg", "4.jpg","5.jpg"]
 
 // radomly selected background src 
 const background = backgrounds[Math.floor(Math.random() * backgrounds.length)];
