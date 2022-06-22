@@ -53,12 +53,22 @@ function onTodoSubmit(event){
     const li = document.createElement("li");                // make a li tag
     const span = document.createElement("span");            // make a span tag
     const button =  document.createElement("button");
+    const buttonX = document.createElement("button");
     button.innerText = "✔";
-    button.addEventListener("click", onClickDelete);
+    buttonX.innerText = "❌";
+    button.addEventListener("click", onClickDone);
+    buttonX.addEventListener("click", onClickDelete);
     span.innerText = value;                               // add todo input value into span 
                                     
     li.appendChild(span);                                   // append span as a child of li
     li.appendChild(button);
+    li.appendChild(buttonX);
     todoList.appendChild(li);                               // append list as a child of ul
                                                              // <ul> <li><span> NEW TODO THING </span> <button>X</button></li></ul>
+ }
+
+ function onClickDone(event){
+        //console.log(event);
+        //console.log(event.path[1].firstChild);
+        event.path[1].firstChild.style.textDecoration = "line-through";
  }

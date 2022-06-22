@@ -7,4 +7,5 @@ const background = backgrounds[Math.floor(Math.random() * backgrounds.length)];
 
 const bgImage = document.createElement("img");      // make a img tag
 bgImage.src = `img/${background}`;                  // set img src
+bgImage.id = "background";
 document.body.appendChild(bgImage);                 // append to html
