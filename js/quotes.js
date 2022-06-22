@@ -51,7 +51,7 @@ const author = document.querySelector("#quote span:last-child");
 
 function setQuotes(){
     const randomQueote = quotes[Math.floor(Math.random() * quotes.length)];
-    quote.innerText = randomQueote.quote;
+    quote.innerText = `"${randomQueote.quote}"`;
     author.innerText = randomQueote.author;
 }
 setQuotes();

@@ -53,7 +53,7 @@ function onTodoSubmit(event){
     const li = document.createElement("li");                // make a li tag
     const span = document.createElement("span");            // make a span tag
     const button =  document.createElement("button");
-    button.innerText = "❌";
+    button.innerText = "✔";
     button.addEventListener("click", onClickDelete);
     span.innerText = value;                               // add todo input value into span 
                                     

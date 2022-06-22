@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Joan&family=Noto+Sans+KR:wght@300&display=swap');
 @import "reset.css";
-
-
 .hidden{
     display: none;
 }
-
-
+body {
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none
+  }
+  
 img {
     position:absolute;
     width:100%;
@@ -18,11 +22,12 @@ img {
     opacity:100%;
     }
 
-    *{
-        
+    *{       
         text-align: center;
-        color: white;
-        text-shadow: 0 1px 5px rgb(0 0 0 / 30%);
+        color: rgba(255,255,255,0.98);;
+        text-shadow: 0 1px 5px rgba(0, 0, 0, 0.75);
+        font-family: 'Noto Sans KR', sans-serif;
+       
     }
 
     input{
@@ -34,6 +39,7 @@ img {
         background-color: transparent;
         padding: 15px 0px;
         color: white;
+        margin : 0;
     }
 
     input:focus{
@@ -58,6 +64,7 @@ img {
         font-size: 1050%;
         letter-spacing: -5px;
         margin-bottom: 0;
+        margin-top: 10%;
     }
 
     .login-form{
@@ -66,10 +73,56 @@ img {
 
     #greeting{
         font-size: 350%;
-        margin-top: 0;      
+        margin-top: 0; 
+        margin-bottom: 50px;     
     }
 
     h3{
         padding: 0;
         font-size: 200%;
+        margin-bottom: 0;
     }
+
+    #quote{
+        font-family: 'Joan', serif;
+        padding: 5px;
+        bottom: 0;
+        position: fixed;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+       
+    }
+
+    #todo-list button{
+        color: green;
+        background-color: aliceblue;
+        margin:7px;
+        margin-right: 230px;
+        border-radius: 10px;;
+        border: 1px solid black;
+        align-items: flex-end;
+       
+    }
+
+    #todo-list li {
+        text-align: right;
+       
+    }
+   
+    #todo-list{
+        text-align: right;
+        position: relative;
+        width: 600px;
+        margin: auto;
+        background-color: rgba(0, 0, 0, 0.626);
+       
+    }
+
+    #weather{
+        position: fixed;
+        top: 10px;
+        right: 10px;
+    }
+
+   
