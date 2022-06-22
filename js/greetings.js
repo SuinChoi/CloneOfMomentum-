@@ -2,6 +2,8 @@ const loginForm = document.querySelector(".login-form");
 const loginInput = document.querySelector(".login-form input");
 const greeting = document.getElementById("greeting");
 const USERNAME_KEY = "userName";
+const h3 = document.querySelector("#todo-form h3");
+
 
 const savedUserName = localStorage.getItem(USERNAME_KEY);
 
@@ -27,6 +29,16 @@ function onLoginSubmit(event){
 }
 
 function paintGreetings(username){
-    greeting.innerText = `Hello ${username}`;           // set the text of h1 as "Hello user name" 
+    const hours = new Date();
+    let hourGreeting = 'Hello';
+    if(hours.getHours < 12){
+        hourGreeting = "Good morning, ";
+    }else if(hourGreeting <16){
+        hourGreeting = "Good afternoon, ";
+    }else{
+        hourGreeting = "Good evening, ";
+    }
+    greeting.innerText = `${hourGreeting} ${username}.`;           // set the text of h1 as "Hello user name" 
     greeting.classList.remove(HIDDEN_CLASSNAME);        // show h1
+    h3.classList.remove(HIDDEN_CLASSNAME); 
 }

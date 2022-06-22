@@ -15,5 +15,60 @@ img {
     right:0px;
     bottom:0px;
     z-index: -1;
-    opacity:80%;
+    opacity:85%;
+    }
+
+    *{
+        
+        text-align: center;
+        color: white;
+    }
+
+    input{
+        border:0;
+        border-bottom: 2px solid ;
+        width: 600px;
+        font-size: 35px;;
+        text-align: center;
+        background-color: transparent;
+        padding: 15px 0px;
+        color: white;
+    }
+
+    input:focus{
+        outline: none;
+    }
+
+    #continue{
+        border: 2px solid white;
+        border-radius: 20px;
+        width: 120px;
+        height: 40px;
+        background-color: rgba(0, 0, 0, 0.2);
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    #continue:hover{
+        background-color: transparent;
+    }
+
+    #clock{
+        font-size: 1050%;
+        letter-spacing: -5px;
+        margin-bottom: 0;
+    }
+
+    .login-form{
+        margin: 0;
+    }
+
+    #greeting{
+        font-size: 350%;
+        margin-top: 0;      
+    }
+
+    h3{
+        padding: 0;
+        font-size: 200%;
     }
